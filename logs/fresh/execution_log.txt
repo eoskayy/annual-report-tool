@@ -1,0 +1,47 @@
+Read bmw_group_report_2025.pdf: 434 pages directly from PDF
+Read mercedes_benz_group_annual_report_2025.pdf: 409 pages directly from PDF
+Read toyota_form_20f_fy2025.pdf: 284 pages directly from PDF
+Read toyota_integrated_report_2025.pdf: 168 pages directly from PDF
+Rows before=434; after=1; reason=bmw_group_report_2025.pdf: full statement title plus both exact target rows
+Rows before=60; after=1; reason=exact printed row label: Revenues
+Rows before=13; after=12; reason=exclude note cell, retain year/scope value cells: Revenues
+Rows before=12; after=1; reason=select current-year consolidated group column: Revenues
+Rows before=60; after=1; reason=exact printed row label: Profit/loss before financial result
+Rows before=12; after=12; reason=exclude note cell, retain year/scope value cells: Profit/loss before financial result
+Rows before=12; after=1; reason=select current-year consolidated group column: Profit/loss before financial result
+Rows before=80; after=61; reason=bmw_group_report_2025.pdf: period-end candidates match current statement year
+Rows before=61; after=1; reason=bmw_group_report_2025.pdf: deduplicate identical period-end dates
+Rows before=293; after=14; reason=bmw_group_report_2025.pdf: opening date equals period end minus twelve calendar months plus one day
+Rows before=14; after=1; reason=bmw_group_report_2025.pdf: deduplicate identical opening-date candidates
+Rows before=409; after=1; reason=mercedes_benz_group_annual_report_2025.pdf: full statement title plus both exact target rows
+Rows before=36; after=1; reason=exact printed row label: Revenue
+Rows before=3; after=2; reason=exclude note cell, retain year/scope value cells: Revenue
+Rows before=2; after=1; reason=select current-year consolidated group column: Revenue
+Rows before=36; after=1; reason=exact printed row label: Earnings before interest and taxes (EBIT)
+Rows before=3; after=2; reason=exclude note cell, retain year/scope value cells: Earnings before interest and taxes (EBIT)
+Rows before=2; after=1; reason=select current-year consolidated group column: Earnings before interest and taxes (EBIT)
+Rows before=177; after=143; reason=mercedes_benz_group_annual_report_2025.pdf: period-end candidates match current statement year
+Rows before=143; after=1; reason=mercedes_benz_group_annual_report_2025.pdf: deduplicate identical period-end dates
+Rows before=312; after=4; reason=mercedes_benz_group_annual_report_2025.pdf: opening date equals period end minus twelve calendar months plus one day
+Rows before=4; after=1; reason=mercedes_benz_group_annual_report_2025.pdf: deduplicate identical opening-date candidates
+Rows before=284; after=1; reason=toyota_form_20f_fy2025.pdf: full statement title plus both exact target rows
+Rows before=53; after=1; reason=exact printed row label: Total sales revenues
+Rows before=4; after=3; reason=exclude note cell, retain year/scope value cells: Total sales revenues
+Rows before=3; after=1; reason=select current-year consolidated group column: Total sales revenues
+Rows before=53; after=1; reason=exact printed row label: Operating income
+Rows before=3; after=3; reason=exclude note cell, retain year/scope value cells: Operating income
+Rows before=3; after=1; reason=select current-year consolidated group column: Operating income
+Rows before=332; after=121; reason=toyota_form_20f_fy2025.pdf: period-end candidates match current statement year
+Rows before=121; after=1; reason=toyota_form_20f_fy2025.pdf: deduplicate identical period-end dates
+Rows before=516; after=4; reason=toyota_form_20f_fy2025.pdf: opening date equals period end minus twelve calendar months plus one day
+Rows before=4; after=1; reason=toyota_form_20f_fy2025.pdf: deduplicate identical opening-date candidates
+Rows before=168; after=2; reason=integrated report: identify actual Financial Summary (Consolidated) pages
+Rows before=168; after=0; reason=integrated report: screen all pages for full consolidated statement titles
+Rows before=36; after=11; reason=margin inputs: source_file=bmw_group_report_2025.pdf
+Rows before=36; after=11; reason=margin inputs: source_file=mercedes_benz_group_annual_report_2025.pdf
+Rows before=36; after=11; reason=margin inputs: source_file=toyota_form_20f_fy2025.pdf
+Rows before=36; after=11; reason=report table: select saved source facts for bmw_group_report_2025.pdf
+Rows before=36; after=11; reason=report table: select saved source facts for mercedes_benz_group_annual_report_2025.pdf
+Rows before=36; after=11; reason=report table: select saved source facts for toyota_form_20f_fy2025.pdf
+Rows before=36; after=0; reason=report: identify explicit abstentions, retaining every required field
+Frozen 36 required fields and 3 margins; no scoring or reference comparison performed.

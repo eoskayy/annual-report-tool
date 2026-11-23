@@ -1,0 +1,703 @@
+{
+  "date": "2026-11-14",
+  "stage": "preliminary location search, no selection or financial extraction",
+  "python_version": "3.12.14",
+  "pypdf_version": "6.21.4",
+  "model_settings": "User-reported GPT-6.1 Sol, Medium; exact backend version unavailable; no separate model API called",
+  "script_sha256": "531660902a13108d038de25c78937ed97e79ffd873771dd0a56bb0a97a8ca7a6",
+  "inventory_read_timing": "after all PDF searches; cross-check only",
+  "financial_value_exposure": "PDF text containing values was processed in memory while searching. No financial values or unredacted context were displayed or saved.",
+  "proposed_selection_rule": "Proposed selection rule, NOT applied: choose an actual standalone income-statement heading in the dedicated full group/consolidated financial-statement section, checking its sequence with the financial-statement index and notes/auditor context. Exclude contents/index entries, narrative references, management-review reproductions, notes-only business-type statements, and comprehensive-income statements. Repeated navigation headers alone do not establish section membership. If more than one candidate remains, stop and report ambiguity rather than choosing the first match. Inventory pages never enter selection; compare the independently selected page with the inventory only afterward.",
+  "documents": [
+    {
+      "report": "bmw",
+      "filename": "bmw_group_report_2025.pdf",
+      "total_pdf_pages": 434,
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "report": "bmw",
+          "filename": "bmw_group_report_2025.pdf",
+          "pdf_page": 4,
+          "printed_page": "4",
+          "matched_title": "income statement for group and segments",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "group_financial_statements",
+            "management_report",
+            "independent_auditor_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "bmw",
+          "filename": "bmw_group_report_2025.pdf",
+          "pdf_page": 270,
+          "printed_page": "270",
+          "matched_title": "income statement for group and segments",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "group_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "bmw",
+          "filename": "bmw_group_report_2025.pdf",
+          "pdf_page": 271,
+          "printed_page": "271",
+          "matched_title": "income statement for group and segments",
+          "title_occurrences": 2,
+          "standalone_title_present": true,
+          "page_context_flags": [
+            "group_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": true
+        }
+      ],
+      "selected_pdf_page": null,
+      "status": "awaiting approval of selection rule",
+      "inventory_cross_check_page": 271,
+      "inventory_page_among_search_candidates": true,
+      "selected_page_agreement": "not determined: no page selected pending approval"
+    },
+    {
+      "report": "mercedes",
+      "filename": "mercedes_benz_group_annual_report_2025.pdf",
+      "total_pdf_pages": 409,
+      "candidate_count": 28,
+      "candidates": [
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 51,
+          "printed_page": "51",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 52,
+          "printed_page": "52",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": true,
+          "page_context_flags": [
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 53,
+          "printed_page": "53",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 54,
+          "printed_page": "54",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 140,
+          "printed_page": "140",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 145,
+          "printed_page": "145",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 155,
+          "printed_page": "155",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 173,
+          "printed_page": "173",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 191,
+          "printed_page": "191",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 251,
+          "printed_page": "251",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 252,
+          "printed_page": "252",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 2,
+          "standalone_title_present": true,
+          "page_context_flags": [
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": true
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 253,
+          "printed_page": "253",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 3,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 259,
+          "printed_page": "259",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 260,
+          "printed_page": "260",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 263,
+          "printed_page": "263",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 266,
+          "printed_page": "266",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 274,
+          "printed_page": "274",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 278,
+          "printed_page": "278",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 4,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 279,
+          "printed_page": "279",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 2,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 289,
+          "printed_page": "289",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 2,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 291,
+          "printed_page": "291",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 297,
+          "printed_page": "297",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 2,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 301,
+          "printed_page": "301",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 317,
+          "printed_page": "317",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 323,
+          "printed_page": "323",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 343,
+          "printed_page": "343",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 344,
+          "printed_page": "344",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "mercedes",
+          "filename": "mercedes_benz_group_annual_report_2025.pdf",
+          "pdf_page": 366,
+          "printed_page": "366",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "management_report"
+          ],
+          "matches_inventory_cross_check": false
+        }
+      ],
+      "selected_pdf_page": null,
+      "status": "awaiting approval of selection rule",
+      "inventory_cross_check_page": 252,
+      "inventory_page_among_search_candidates": true,
+      "selected_page_agreement": "not determined: no page selected pending approval"
+    },
+    {
+      "report": "toyota_20f",
+      "filename": "toyota_form_20f_fy2025.pdf",
+      "total_pdf_pages": 284,
+      "candidate_count": 14,
+      "candidates": [
+        {
+          "report": "toyota_20f",
+          "filename": "toyota_form_20f_fy2025.pdf",
+          "pdf_page": 99,
+          "printed_page": "94",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "toyota_20f",
+          "filename": "toyota_form_20f_fy2025.pdf",
+          "pdf_page": 115,
+          "printed_page": "110",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "consolidated_financial_statements"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "toyota_20f",
+          "filename": "toyota_form_20f_fy2025.pdf",
+          "pdf_page": 173,
+          "printed_page": "F-1",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "index_to_statements",
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "independent_auditor_report"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "toyota_20f",
+          "filename": "toyota_form_20f_fy2025.pdf",
+          "pdf_page": 178,
+          "printed_page": "F-6",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": true,
+          "page_context_flags": [
+            "consolidated_financial_statements"
+          ],
+          "matches_inventory_cross_check": true
+        },
+        {
+          "report": "toyota_20f",
+          "filename": "toyota_form_20f_fy2025.pdf",
+          "pdf_page": 193,
+          "printed_page": "F-21",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "toyota_20f",
+          "filename": "toyota_form_20f_fy2025.pdf",
+          "pdf_page": 200,
+          "printed_page": "F-28",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements",
+            "business_type_statement"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "toyota_20f",
+          "filename": "toyota_form_20f_fy2025.pdf",
+          "pdf_page": 211,
+          "printed_page": "F-39",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "toyota_20f",
+          "filename": "toyota_form_20f_fy2025.pdf",
+          "pdf_page": 212,
+          "printed_page": "F-40",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "toyota_20f",
+          "filename": "toyota_form_20f_fy2025.pdf",
+          "pdf_page": 214,
+          "printed_page": "F-42",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "toyota_20f",
+          "filename": "toyota_form_20f_fy2025.pdf",
+          "pdf_page": 216,
+          "printed_page": "F-44",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "toyota_20f",
+          "filename": "toyota_form_20f_fy2025.pdf",
+          "pdf_page": 222,
+          "printed_page": "F-50",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "toyota_20f",
+          "filename": "toyota_form_20f_fy2025.pdf",
+          "pdf_page": 236,
+          "printed_page": "F-64",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 2,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "toyota_20f",
+          "filename": "toyota_form_20f_fy2025.pdf",
+          "pdf_page": 243,
+          "printed_page": "F-71",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements"
+          ],
+          "matches_inventory_cross_check": false
+        },
+        {
+          "report": "toyota_20f",
+          "filename": "toyota_form_20f_fy2025.pdf",
+          "pdf_page": 251,
+          "printed_page": "F-79",
+          "matched_title": "consolidated statement of income",
+          "title_occurrences": 1,
+          "standalone_title_present": false,
+          "page_context_flags": [
+            "notes_to_statements",
+            "consolidated_financial_statements"
+          ],
+          "matches_inventory_cross_check": false
+        }
+      ],
+      "selected_pdf_page": null,
+      "status": "awaiting approval of selection rule",
+      "inventory_cross_check_page": 178,
+      "inventory_page_among_search_candidates": true,
+      "selected_page_agreement": "not determined: no page selected pending approval"
+    }
+  ]
+}

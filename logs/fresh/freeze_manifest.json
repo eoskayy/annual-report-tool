@@ -1,0 +1,16 @@
+{
+  "run": "fresh",
+  "status": "frozen first pass; unscored",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "pypdf": "6.21.4",
+  "sha256": {
+    "data/raw/bmw_group_report_2025.pdf": "970c0792d4d3600412564b4048cf38606b56151a5cef44598b09e115b85cf199",
+    "data/raw/mercedes_benz_group_annual_report_2025.pdf": "14a69ab18bdaee49d9314ffe21aa88fafb0d954ab25518e2eac0cb444cd19da7",
+    "data/raw/toyota_form_20f_fy2025.pdf": "1eebae72a6d05de574198408f61ec392df18b9ed137e65a9df1254ad25940d9d",
+    "data/raw/toyota_integrated_report_2025.pdf": "12dd23ff8d800061e233705329842fc5c9aef62f44075740fc4ed83149a2f592",
+    "src/fresh/01_extract_reports.py": "6e1eb37818be0c404c5d419d10486dbab9297f6a14356b1825b1a0847207cf71",
+    "results/fresh/extracted_fields.csv": "4e3c2e31a66a56d05e352b2ebfaee7b39b6fbfe1a7a9da1d2a3d4e36486320c6",
+    "results/fresh/calculated_margins.csv": "bbca9451695b30a82f77437c8ec878a3ae8aa9df56eb84fccf0ffda672dc8cf5",
+    "results/fresh/initial_report.md": "3f71742a897ba4e14b25625039bb69d379bfaf4a2ec949a71c77e1a2268619cb"
+  }
+}

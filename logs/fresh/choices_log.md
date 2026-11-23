@@ -1,0 +1,84 @@
+# Fresh run choices (2026-11-14, Europe/Rome)
+
+- Followed the current user's authorization to implement and finish the autonomous fresh run; no substantive supervised workflow was used.
+- Used the explicit run name fresh for all three directory roots; treated the user's folder override as authorization, without editing the plan.
+- Read AGENTS.md, plan.md, data/README.md and the blank field schema only; did not read supervised paths, mistakes.md, reference answers, prior scripts, prior logs or prior results.
+- general_instructions.txt, project_instructions.txt and an assignment brief were not supplied in the clean workspace; proceeded using the supplied plan and user authorization.
+- The supplied workspace includes the permitted blank verification/reference_table_template.csv beyond the plan's minimal clean-copy list; used only its field_id/source_file/field_name schema, without consuming reference-value or evidence columns; disclose this clean-copy departure.
+- Available identity: Codex based on GPT-6; exact serving model name/version, reasoning setting, backend details, sampling settings and seed control are not exposed. The plan records user-reported GPT-6.1 Sol, Medium settings; they are not independently confirmed here.
+- No subagents, external research, new reports, downloads, currency conversions, added analytical metrics, or changes to the plan were used.
+- Used the PDF skill and bundled Python/pypdf runtime; pypdf warnings indicate missing optional fontTools and rotated-text omissions; retained warnings and visually checked the target statement cells using bundled pypdfium2 rendering.
+- Inspected all report text in temporary files under /tmp/fresh_pdf_inspection for source discovery before implementation; temporary files are not extraction inputs. The final script reads original PDFs directly and does not consume inspection caches.
+- Inspected rendered full target statement pages to establish printed rows, current year and group-versus-segment positions; these were agent checks, not user verification or an independent evaluation.
+- Inspected integrated-report contents and financial-summary sections and screened all text for full statement titles; classified its coverage as summary-only, without asserting the summary figures themselves are unaudited or inaccurate.
+- Selected BMW Profit/loss before financial result, Mercedes-Benz Earnings before interest and taxes (EBIT), and Toyota Operating income as the printed profit measures; did not treat them as equivalent.
+- Used configurable statement-title, exact-label, company-name, units, period-end and column-layout selectors; no financial amounts were placed in scripts or configuration.
+- Derived current year from the statement column header; selected the first Group column for BMW, first consolidated column for Mercedes-Benz and last year column for Toyota; excluded note cells and other year/scope cells with row-count logs.
+- Kept standalone dashes in non-target table cells during development to preserve column alignment; did not convert them into financial inputs or silently shift columns.
+- Checked parser syntax and selector structure against inspection text before freezing implementation; this was development validation, not a scored run or a rerun of frozen outputs.
+- Collected document date candidates; required opening date to equal period end minus twelve calendar months plus one day, deduplicated identical dates, and cited the occurrence nearest the income statement. No unique date means explicit not found.
+- Normalized euro symbols/euros to EUR and Yen to JPY while retaining printed currency-and-unit evidence; kept all values in printed units without scaling.
+- Removed thousands separators from runtime-extracted financial cells and retained signs; extracted labels retain the printed words without dotted leaders.
+- Kept PDF pages one-based and printed-page evidence separate; source dates can cite supporting document pages outside the income statement.
+- Treated current-year cells as reported values; no adjusted or restated substitute was selected. This status describes selection, not a comprehensive assertion that the entire report has no restatements.
+- Used the supplied blank field_id schema in its original order, validated unique identifiers and source/field keys, and retained every required field; performed no merges.
+- Computed Decimal profit divided by revenue times 100 at precision 50 and ROUND_HALF_UP to one decimal; retained exact numerator/denominator ratio as well as finite-precision unrounded decimal output.
+- Named every margin after its runtime-extracted printed profit label; withheld ranking and flagged period, profit-definition and currency differences.
+- Generated the report from saved extracted_fields.csv and calculated_margins.csv; separated extracted facts from calculations and document-coverage judgements.
+- Used a compact Markdown report intended as one page; physical pagination depends on the viewer, and no PDF report was requested.
+- Preserved the first completed execution and outputs with SHA-256 hashes and overwrite refusal; did not score extraction accuracy, solicit reference answers, rerun frozen extraction, or claim independent user verification.
+- Prior development exposure and the earlier rule revisions are disclosed from the plan; this fresh session also inspected source text and table renders before implementation, so it is not an untouched holdout.
+- No random algorithm is used by the Python extractor; script execution is deterministic for the same PDF bytes and dependencies, while agent interpretation and unavailable model sampling details remain variability sources.
+- Portable equivalent of the original bundled-Python execution command: .venv/bin/python src/fresh/01_extract_reports.py; dependencies and versions are retained in freeze_manifest.json; stdout in execution_log.txt and PDF warnings in pdf_parser_warnings.log.
+- Stopped after saving and checking the requested first-pass artifacts; independent claim checks, reference scoring and spreadsheet recomputation remain planned for a later authorized step.
+- Final artifact check passed: all required identifiers present and unique, source/field keys unique, required values and provenance nonempty, and source/script/output SHA-256 hashes match the freeze manifest; this was an agent completeness/integrity check, not independent correctness scoring.
+- Validated field_id uniqueness and fixed field schema; no joins or denominator reduction.
+- Rows before=434; after=1; reason=bmw_group_report_2025.pdf: full statement title plus both exact target rows
+- Rows before=60; after=1; reason=exact printed row label: Revenues
+- Rows before=13; after=12; reason=exclude note cell, retain year/scope value cells: Revenues
+- Rows before=12; after=1; reason=select current-year consolidated group column: Revenues
+- Rows before=60; after=1; reason=exact printed row label: Profit/loss before financial result
+- Rows before=12; after=12; reason=exclude note cell, retain year/scope value cells: Profit/loss before financial result
+- Rows before=12; after=1; reason=select current-year consolidated group column: Profit/loss before financial result
+- Rows before=80; after=61; reason=bmw_group_report_2025.pdf: period-end candidates match current statement year
+- Rows before=61; after=1; reason=bmw_group_report_2025.pdf: deduplicate identical period-end dates
+- Rows before=293; after=14; reason=bmw_group_report_2025.pdf: opening date equals period end minus twelve calendar months plus one day
+- Rows before=14; after=1; reason=bmw_group_report_2025.pdf: deduplicate identical opening-date candidates
+- bmw_group_report_2025.pdf: retained reported current-year group cells; excluded all prior years and segments; no adjusted/restated substitute; labels taken from matched PDF rows.
+- bmw_group_report_2025.pdf: current-year header=[2025, 2024, 2025, 2024, 2025, 2024, 2025, 2024, 2025, 2024, 2025, 2024]; selected zero-based value-column=0; currency normalized from in € million; dates selected only from actual document candidates.
+- Rows before=409; after=1; reason=mercedes_benz_group_annual_report_2025.pdf: full statement title plus both exact target rows
+- Rows before=36; after=1; reason=exact printed row label: Revenue
+- Rows before=3; after=2; reason=exclude note cell, retain year/scope value cells: Revenue
+- Rows before=2; after=1; reason=select current-year consolidated group column: Revenue
+- Rows before=36; after=1; reason=exact printed row label: Earnings before interest and taxes (EBIT)
+- Rows before=3; after=2; reason=exclude note cell, retain year/scope value cells: Earnings before interest and taxes (EBIT)
+- Rows before=2; after=1; reason=select current-year consolidated group column: Earnings before interest and taxes (EBIT)
+- Rows before=177; after=143; reason=mercedes_benz_group_annual_report_2025.pdf: period-end candidates match current statement year
+- Rows before=143; after=1; reason=mercedes_benz_group_annual_report_2025.pdf: deduplicate identical period-end dates
+- Rows before=312; after=4; reason=mercedes_benz_group_annual_report_2025.pdf: opening date equals period end minus twelve calendar months plus one day
+- Rows before=4; after=1; reason=mercedes_benz_group_annual_report_2025.pdf: deduplicate identical opening-date candidates
+- mercedes_benz_group_annual_report_2025.pdf: retained reported current-year group cells; excluded all prior years and segments; no adjusted/restated substitute; labels taken from matched PDF rows.
+- mercedes_benz_group_annual_report_2025.pdf: current-year header=[2025, 2024]; selected zero-based value-column=0; currency normalized from In millions of euros; dates selected only from actual document candidates.
+- Rows before=284; after=1; reason=toyota_form_20f_fy2025.pdf: full statement title plus both exact target rows
+- Rows before=53; after=1; reason=exact printed row label: Total sales revenues
+- Rows before=4; after=3; reason=exclude note cell, retain year/scope value cells: Total sales revenues
+- Rows before=3; after=1; reason=select current-year consolidated group column: Total sales revenues
+- Rows before=53; after=1; reason=exact printed row label: Operating income
+- Rows before=3; after=3; reason=exclude note cell, retain year/scope value cells: Operating income
+- Rows before=3; after=1; reason=select current-year consolidated group column: Operating income
+- Rows before=332; after=121; reason=toyota_form_20f_fy2025.pdf: period-end candidates match current statement year
+- Rows before=121; after=1; reason=toyota_form_20f_fy2025.pdf: deduplicate identical period-end dates
+- Rows before=516; after=4; reason=toyota_form_20f_fy2025.pdf: opening date equals period end minus twelve calendar months plus one day
+- Rows before=4; after=1; reason=toyota_form_20f_fy2025.pdf: deduplicate identical opening-date candidates
+- toyota_form_20f_fy2025.pdf: retained reported current-year group cells; excluded all prior years and segments; no adjusted/restated substitute; labels taken from matched PDF rows.
+- toyota_form_20f_fy2025.pdf: current-year header=['2023', '2024', '2025']; selected zero-based value-column=2; currency normalized from Yen in millions; dates selected only from actual document candidates.
+- Rows before=168; after=2; reason=integrated report: identify actual Financial Summary (Consolidated) pages
+- Rows before=168; after=0; reason=integrated report: screen all pages for full consolidated statement titles
+- Integrated report: assessed contents, financial-summary pages and full-document statement-title screening; treated as summary-only and excluded every numerical value from audited comparison and margins. This is an agent judgement, not independent verification.
+- Rows before=36; after=11; reason=margin inputs: source_file=bmw_group_report_2025.pdf
+- Rows before=36; after=11; reason=margin inputs: source_file=mercedes_benz_group_annual_report_2025.pdf
+- Rows before=36; after=11; reason=margin inputs: source_file=toyota_form_20f_fy2025.pdf
+- Rows before=36; after=11; reason=report table: select saved source facts for bmw_group_report_2025.pdf
+- Rows before=36; after=11; reason=report table: select saved source facts for mercedes_benz_group_annual_report_2025.pdf
+- Rows before=36; after=11; reason=report table: select saved source facts for toyota_form_20f_fy2025.pdf
+- Rows before=36; after=0; reason=report: identify explicit abstentions, retaining every required field

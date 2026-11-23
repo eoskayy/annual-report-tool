@@ -1,0 +1,28 @@
+RUN NAME: fresh
+
+Read plan.md, AGENTS.md and data/README.md, then carry out the extraction task
+defined in plan.md on your own, without asking me about routine choices.
+
+Rules:
+- Do not read src/supervised/, results/supervised/, logs/supervised/ or
+  mistakes.md, if they exist. Do not look for any reference answers.
+- Write a Python script that reads the four PDFs in data/raw/ at run time and
+  produces the 36 required fields using the field_id values in
+  verification/reference_table_template.csv. No financial value may be typed
+  into any script or configuration file.
+- If one field cannot be decided, record "not found" with the reason and
+  continue. Never guess and never substitute another measure, year, or column.
+- Compute the three margins in Python: unrounded, and rounded half up to one
+  decimal place. Name each margin after its printed profit label.
+- Save, using the run name as the folder name:
+  src/<run name>/                      the script(s)
+  results/<run name>/extracted_fields.csv
+  results/<run name>/calculated_margins.csv
+  results/<run name>/initial_report.md   (one page: comparison table,
+                                          comparability flags, limitations)
+  logs/<run name>/choices_log.md         (every choice you made without asking
+                                          me, one line each, plus the model name
+                                          if you can see it)
+- Do not edit plan.md, AGENTS.md, mistakes.md, or anything in data/raw/.
+- Stop and ask only if you would need to change plan.md. Otherwise finish, give
+  me a five-line summary, and stop.

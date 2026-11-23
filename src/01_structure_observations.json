@@ -1,0 +1,1031 @@
+{
+  "method": "Structure inspection only, using Python 3.12.14 and pypdf 6.21.4 from Codex’s bundled Python runtime (not a uv project environment). Source: the four uploaded PDFs only; no external filings or web sources were consulted. PDF page references are one-based positions; Printed page numbers are distinguished from PDF metadata page labels. Statement/summary page numbers were checked against extracted visible headers/footers; Toyota’s editorial-policy page was also visually checked and is unnumbered despite its PDF label 2. Each item is marked observed in the document, not found, or uncertain. Observed means agent-observed, not independently verified by the user.\n\n**Financial-value exposure:** Locating the statement and summary pages necessarily caused the PDF reader to process text containing financial values. Inspection output redacted numeric tokens before display. An initial Toyota chart-font output contained number-name glyph tokens; this was detected and the redactor was extended to mask them. Financial-value content was therefore incidentally encountered during structure inspection. No financial amounts were decoded for analysis, transcribed into these outputs, calculated, reported, or compared. No unredacted page-text dump or rendered financial page was saved. Only Toyota’s non-financial editorial-policy page was rendered for a page-number check. Structural inspection and source-label review have now touched all four reports; they should not later be described as wholly unseen documents.\n\n**Toyota source decision (user, 2026-11-13):** The added Form 20-F is intended as Toyota’s audited source. The integrated report remains deliberately included as a summary-only hard case, to test recognition of document type and preference for audited statements. This is a recorded user decision, not a test result. The new file is reported by the user to be public and free of personal or confidential data.",
+  "rows": [
+    {
+      "report": "bmw",
+      "item": "1. Document title and type",
+      "status": "observed in the document",
+      "observation": "BMW GROUP REPORT 2025. An annually published group report combining management reporting and group financial statements; cover subtitle: Report on the economic performance of the BMW Group and its environmental and social contribution.",
+      "pdf_pages": "1; 6",
+      "printed_pages": "Cover unnumbered; 6",
+      "notes": "Capitalization retained for the cover title; line breaks normalized.",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "BMW  GROUP REPORT 2025"
+        },
+        {
+          "page": 1,
+          "quote": "Report on the economic performance of the BMW Group and its environmental"
+        },
+        {
+          "page": 6,
+          "quote": "The BMW Group Report is published annually"
+        }
+      ]
+    },
+    {
+      "report": "bmw",
+      "item": "2. Company, legal entity, and group scope",
+      "status": "observed in the document",
+      "observation": "BMW Group; Bayerische Motoren Werke Aktiengesellschaft (BMW AG). Consolidated group statements include BMW AG and its controlled material subsidiaries.",
+      "pdf_pages": "279; 365",
+      "printed_pages": "279; 365",
+      "notes": "Group columns must be distinguished from supplementary segment columns.",
+      "evidence": [
+        {
+          "page": 279,
+          "quote": "Bayerische Motoren Werke Aktiengesellschaft (BMW AG)"
+        },
+        {
+          "page": 279,
+          "quote": "The BMW Group Financial Statements include BMW AG and all"
+        }
+      ]
+    },
+    {
+      "report": "bmw",
+      "item": "3. Reporting period",
+      "status": "observed in the document",
+      "observation": "1 January 2025 to 31 December 2025.",
+      "pdf_pages": "6; 365",
+      "printed_pages": "6; 365",
+      "notes": "The period year follows the combined phrase from 1 January to 31 December 2025.",
+      "evidence": [
+        {
+          "page": 6,
+          "quote": "1 January to  \n31 December 2025"
+        }
+      ]
+    },
+    {
+      "report": "bmw",
+      "item": "4. Reporting currency and statement units",
+      "status": "observed in the document",
+      "observation": "Euro; amounts in millions of euros (€ million), unless stated otherwise. The income statement header is in € million.",
+      "pdf_pages": "271; 279",
+      "printed_pages": "271; 279",
+      "notes": "Statement has expressly labelled per-share exceptions; no amounts are transcribed.",
+      "evidence": [
+        {
+          "page": 271,
+          "quote": "in € million"
+        },
+        {
+          "page": 279,
+          "quote": "The Group Financial Statements have been drawn up in euros."
+        },
+        {
+          "page": 279,
+          "quote": "All amounts are disclosed in millions  of euros (€ million) unless"
+        }
+      ]
+    },
+    {
+      "report": "bmw",
+      "item": "5. Accounting standard",
+      "status": "observed in the document",
+      "observation": "International Financial Reporting Standards (IFRS) as endorsed by the European Union, with supplementary German Commercial Code (HGB) requirements.",
+      "pdf_pages": "6; 279; 365",
+      "printed_pages": "6; 279; 365",
+      "notes": "Accounting basis is stated for the consolidated financial statements.",
+      "evidence": [
+        {
+          "page": 6,
+          "quote": "porting Standards (IFRS) as endorsed by the European Union"
+        },
+        {
+          "page": 279,
+          "quote": "supplementary requirements"
+        }
+      ]
+    },
+    {
+      "report": "bmw",
+      "item": "6. Full statements and auditor report",
+      "status": "observed in the document",
+      "observation": "Full consolidated financial statements and an Independent Auditor’s Report are present. Group financial-statement section starts at PDF/printed page 270; notes start at 279; auditor’s report starts at 365.",
+      "pdf_pages": "270; 279; 365",
+      "printed_pages": "270; 279; 365",
+      "notes": "Auditor identifies the balance sheet, income statement, comprehensive income, changes in equity, cash flows, and notes. This records document presence and stated audit scope, not an independent audit.",
+      "evidence": [
+        {
+          "page": 270,
+          "quote": "Notes to the Group Financial Statements"
+        },
+        {
+          "page": 365,
+          "quote": "We have audited the consolidated financial statements"
+        },
+        {
+          "page": 365,
+          "quote": "Independent Auditor’s Report"
+        }
+      ]
+    },
+    {
+      "report": "bmw",
+      "item": "7. Consolidated income-statement location and exact title",
+      "status": "observed in the document",
+      "observation": "INCOME STATEMENT FOR GROUP AND SEGMENTS. PDF page 271; printed page 271.",
+      "pdf_pages": "271",
+      "printed_pages": "271",
+      "notes": "Heading is uppercase on the page; line breaks normalized. Group and supplementary segment columns share the same page.",
+      "evidence": [
+        {
+          "page": 271,
+          "quote": "INCOME STATEMENT  \nFOR GROUP AND SEGMENTS"
+        },
+        {
+          "page": 271,
+          "quote": "271 BMW Group Report 2025"
+        }
+      ]
+    },
+    {
+      "report": "bmw",
+      "item": "8a. Revenue candidate row label",
+      "status": "observed in the document",
+      "observation": "Revenues",
+      "pdf_pages": "271",
+      "printed_pages": "271",
+      "notes": "Label only; use the consolidated Group columns in any later authorized extraction.",
+      "evidence": [
+        {
+          "page": 271,
+          "quote": "Revenues"
+        }
+      ]
+    },
+    {
+      "report": "bmw",
+      "item": "8b. Operating-profit candidate row label",
+      "status": "observed in the document",
+      "observation": "Profit/loss before financial result",
+      "pdf_pages": "271",
+      "printed_pages": "271",
+      "notes": "Candidate label only. Whether this is comparable with the other companies’ profit measures is not established.",
+      "evidence": [
+        {
+          "page": 271,
+          "quote": "Profit/loss before financial result"
+        }
+      ]
+    },
+    {
+      "report": "bmw",
+      "item": "9a. Total page count",
+      "status": "observed in the document",
+      "observation": "434 PDF pages.",
+      "pdf_pages": "Entire file: 1–434",
+      "printed_pages": "Not applicable: PDF-level page count",
+      "notes": "Count obtained from the PDF page tree; validated by the generating script.",
+      "evidence": []
+    },
+    {
+      "report": "bmw",
+      "item": "9b. Text machine-readability",
+      "status": "observed in the document",
+      "observation": "Machine-readable text is present: 433 of 434 PDF pages yield more than 100 text characters after trimming leading/trailing whitespace with pypdf. The income statement and accounting-basis pages are readable.",
+      "pdf_pages": "Entire file: 1–434; examples 271; 279",
+      "printed_pages": "Examples 271; 279",
+      "notes": "The character threshold is a structural screening heuristic, not an accuracy score. No OCR or visual-layout validation was performed.",
+      "evidence": [
+        {
+          "page": 271,
+          "quote": "Profit/loss before financial result"
+        },
+        {
+          "page": 279,
+          "quote": "Basis of preparation"
+        }
+      ]
+    },
+    {
+      "report": "mercedes",
+      "item": "1. Document title and type",
+      "status": "observed in the document",
+      "observation": "Mercedes-Benz Group Annual Report 2025. Document type as printed: Annual Report.",
+      "pdf_pages": "1",
+      "printed_pages": "Cover unnumbered",
+      "notes": "Cover line breaks normalized.",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "Mercedes-Benz Group\nAnnual Report 2025"
+        }
+      ]
+    },
+    {
+      "report": "mercedes",
+      "item": "2. Company, legal entity, and group scope",
+      "status": "observed in the document",
+      "observation": "Mercedes-Benz Group; Mercedes-Benz Group AG and its subsidiaries. Consolidated group financial statements.",
+      "pdf_pages": "259; 390",
+      "printed_pages": "259; 390",
+      "notes": "The legal parent is Mercedes-Benz Group AG, not merely the Mercedes-Benz brand or an individual operating subsidiary.",
+      "evidence": [
+        {
+          "page": 259,
+          "quote": "Mercedes-Benz Group AG is a stock corporation"
+        },
+        {
+          "page": 259,
+          "quote": "Benz Group AG and its subsidiaries"
+        },
+        {
+          "page": 390,
+          "quote": "We have audited the consolidated financial statements"
+        }
+      ]
+    },
+    {
+      "report": "mercedes",
+      "item": "3. Reporting period",
+      "status": "observed in the document",
+      "observation": "1 January 2025 to 31 December 2025.",
+      "pdf_pages": "390",
+      "printed_pages": "390",
+      "notes": "Financial year explicitly identified in the auditor’s report.",
+      "evidence": [
+        {
+          "page": 390,
+          "quote": "financial year from 1 January to 31 December 2025"
+        }
+      ]
+    },
+    {
+      "report": "mercedes",
+      "item": "4. Reporting currency and statement units",
+      "status": "observed in the document",
+      "observation": "Euro (€); amounts in millions of euros unless otherwise stated. Income statement header: In millions of euros.",
+      "pdf_pages": "252; 259",
+      "printed_pages": "252; 259",
+      "notes": "Per-share rows have expressly labelled euro units; no amounts are transcribed.",
+      "evidence": [
+        {
+          "page": 252,
+          "quote": "In millions of euros"
+        },
+        {
+          "page": 259,
+          "quote": "Benz Group AG are presented in euros (€). Unless"
+        },
+        {
+          "page": 259,
+          "quote": "otherwise stated, all amounts are given in millions"
+        }
+      ]
+    },
+    {
+      "report": "mercedes",
+      "item": "5. Accounting standard",
+      "status": "observed in the document",
+      "observation": "International Financial Reporting Standards (IFRS) in the form applicable in the European Union, with German Commercial Code (HGB) requirements.",
+      "pdf_pages": "259; 390",
+      "printed_pages": "259; 390",
+      "notes": "The IFRS Foundation reporting framework mentioned in Toyota’s editorial policy is a different type of statement from this accounting-basis disclosure.",
+      "evidence": [
+        {
+          "page": 259,
+          "quote": "International Financial Reporting Standards (IFRS) in"
+        },
+        {
+          "page": 259,
+          "quote": "Union (EU) as of 31 December 2025."
+        }
+      ]
+    },
+    {
+      "report": "mercedes",
+      "item": "6. Full statements and auditor report",
+      "status": "observed in the document",
+      "observation": "Full consolidated financial statements and an Independent Auditor’s Report are present. Financial-statement section starts at PDF/printed page 251; notes start at 259; auditor’s report starts at 390.",
+      "pdf_pages": "251; 259; 390",
+      "printed_pages": "251; 259; 390",
+      "notes": "Auditor identifies the consolidated financial position, profit or loss, comprehensive income, changes in equity, cash flows, and notes. Presence and stated audit scope recorded only.",
+      "evidence": [
+        {
+          "page": 251,
+          "quote": "CONSOLIDATED FINANCIAL STATEMENTS"
+        },
+        {
+          "page": 259,
+          "quote": "Notes to the Consolidated Financial Statements"
+        },
+        {
+          "page": 390,
+          "quote": "Independent Auditor’s Report"
+        },
+        {
+          "page": 390,
+          "quote": "We have audited the consolidated financial statements"
+        }
+      ]
+    },
+    {
+      "report": "mercedes",
+      "item": "7. Consolidated income-statement location and exact title",
+      "status": "observed in the document",
+      "observation": "Consolidated Statement of Income. PDF page 252; printed page 252.",
+      "pdf_pages": "252",
+      "printed_pages": "252",
+      "notes": "An earlier presentation also appears in management reporting (PDF page 52); the page recorded here belongs to the full financial-statement section.",
+      "evidence": [
+        {
+          "page": 252,
+          "quote": "Consolidated Statement of Income"
+        },
+        {
+          "page": 252,
+          "quote": "Annual Report 2025 | Mercedes-Benz Group 252"
+        }
+      ]
+    },
+    {
+      "report": "mercedes",
+      "item": "8a. Revenue candidate row label",
+      "status": "observed in the document",
+      "observation": "Revenue",
+      "pdf_pages": "252",
+      "printed_pages": "252",
+      "notes": "Label only.",
+      "evidence": [
+        {
+          "page": 252,
+          "quote": "Revenue"
+        }
+      ]
+    },
+    {
+      "report": "mercedes",
+      "item": "8b. Operating-profit candidate row label",
+      "status": "observed in the document",
+      "observation": "Earnings before interest and taxes (EBIT)",
+      "pdf_pages": "252",
+      "printed_pages": "252",
+      "notes": "Candidate label only, not a confirmed equivalent of operating profit. Gains/losses on equity-method investments, net and Other financial income/expense, net appear above EBIT in this statement.",
+      "evidence": [
+        {
+          "page": 252,
+          "quote": "Earnings before interest and taxes (EBIT)"
+        },
+        {
+          "page": 252,
+          "quote": "Gains/losses on equity-method investments, net"
+        },
+        {
+          "page": 252,
+          "quote": "Other financial income/expense, net"
+        }
+      ]
+    },
+    {
+      "report": "mercedes",
+      "item": "9a. Total page count",
+      "status": "observed in the document",
+      "observation": "409 PDF pages.",
+      "pdf_pages": "Entire file: 1–409",
+      "printed_pages": "Not applicable: PDF-level page count",
+      "notes": "Count obtained from the PDF page tree; validated by the generating script.",
+      "evidence": []
+    },
+    {
+      "report": "mercedes",
+      "item": "9b. Text machine-readability",
+      "status": "observed in the document",
+      "observation": "Machine-readable text is present: 404 of 409 PDF pages yield more than 100 text characters after trimming leading/trailing whitespace with pypdf. The income statement and accounting-basis pages are readable.",
+      "pdf_pages": "Entire file: 1–409; examples 252; 259",
+      "printed_pages": "Examples 252; 259",
+      "notes": "The character threshold is a structural screening heuristic, not an accuracy score. No OCR or visual-layout validation was performed.",
+      "evidence": [
+        {
+          "page": 252,
+          "quote": "Consolidated Statement of Income"
+        },
+        {
+          "page": 259,
+          "quote": "Basis of preparation"
+        }
+      ]
+    },
+    {
+      "report": "toyota",
+      "item": "1. Document title and type",
+      "status": "observed in the document",
+      "observation": "INTEGRATED REPORT 2025. Document type as printed: Integrated Report. Editorial policy states publication in February 2026.",
+      "pdf_pages": "1; 3",
+      "printed_pages": "Cover unnumbered (PDF label H1); policy unnumbered (PDF label 2)",
+      "notes": "The year in the report title is not its publication year or a calendar-year financial-period definition.",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "INTEGRATED REPORT\n2025"
+        },
+        {
+          "page": 3,
+          "quote": "(Published in February 2026)"
+        }
+      ]
+    },
+    {
+      "report": "toyota",
+      "item": "2. Company, legal entity, and reporting scope",
+      "status": "observed in the document",
+      "observation": "Toyota Motor Corporation. Editorial scope covers Toyota Motor Corporation and consolidated subsidiaries in Japan and overseas; a Financial Summary (Consolidated) is included.",
+      "pdf_pages": "3; 164; 166",
+      "printed_pages": "Policy unnumbered (PDF label 2); 163; 165",
+      "notes": "This is a consolidated-scope summary, not evidence that full consolidated statements are included.",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "Corporation and consolidated subsidiaries"
+        },
+        {
+          "page": 164,
+          "quote": "Financial Summary (Consolidated)"
+        },
+        {
+          "page": 166,
+          "quote": "Company Name Toyota Motor Corporation"
+        }
+      ]
+    },
+    {
+      "report": "toyota",
+      "item": "3. Reporting period",
+      "status": "observed in the document",
+      "observation": "Fiscal 2025: 1 April 2024 to 31 March 2025. The editorial policy also covers results and forecasts for fiscal 2026; the summary includes multiple fiscal years ended March 31, through 2025.",
+      "pdf_pages": "3; 164",
+      "printed_pages": "Policy unnumbered (PDF label 2); 163",
+      "notes": "The fiscal 2026 reference does not establish a new exact period in this inspection; do not infer a common calendar-year 2025 sample.",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "This report covers the results and forecasts for fiscal 2025—the period from April 1, 2024, to March 31, 2025—and fiscal 2026."
+        },
+        {
+          "page": 164,
+          "quote": "Fiscal years ended March 31"
+        }
+      ]
+    },
+    {
+      "report": "toyota",
+      "item": "4a. Currency and units in available summary",
+      "status": "observed in the document",
+      "observation": "Yen; Sales revenues and Operating income are labelled Billions of yen in the consolidated financial summary.",
+      "pdf_pages": "164",
+      "printed_pages": "163",
+      "notes": "Units are observed for the summary, not for a full financial statement absent from this file. Other rows/charts use other explicitly labelled units.",
+      "evidence": [
+        {
+          "page": 164,
+          "quote": "Sales revenues (Billions of yen)"
+        },
+        {
+          "page": 164,
+          "quote": "Operating income Operating income (Billions of yen)"
+        }
+      ]
+    },
+    {
+      "report": "toyota",
+      "item": "4b. Currency and units of full financial statements",
+      "status": "not found",
+      "observation": "Full consolidated financial statements were not found in this uploaded document; their statement-level currency and units cannot be established from this file.",
+      "pdf_pages": "Entire file: 1–168; summary 164",
+      "printed_pages": "Summary 163",
+      "notes": "Do not substitute the summary’s units for units in a separate financial-statement document.",
+      "evidence": []
+    },
+    {
+      "report": "toyota",
+      "item": "5. Accounting standard as stated for summary",
+      "status": "observed in the document",
+      "observation": "The summary/chart note states: Figures for fiscal 2021–fiscal 2025 are based on IFRS. The historical summary also labels U.S. GAAP and IFRS.",
+      "pdf_pages": "164; 165",
+      "printed_pages": "163; 164",
+      "notes": "This establishes the stated basis of summary information, not the audit status of this document. The International Integrated Reporting Framework referenced on PDF page 3 is a reporting framework, not by itself an accounting-standard or audit declaration.",
+      "evidence": [
+        {
+          "page": 165,
+          "quote": "Note: Figures for fiscal 2021–fiscal 2025 are based on IFRS."
+        },
+        {
+          "page": 164,
+          "quote": "U.S. GAAP IFRS"
+        }
+      ]
+    },
+    {
+      "report": "toyota",
+      "item": "6a. Available financial-information type",
+      "status": "observed in the document",
+      "observation": "Financial Summary (Consolidated) is present, with a historical table and charts. Editorial policy directs readers to other publications for more detailed information.",
+      "pdf_pages": "2; 3; 164; 165; 166",
+      "printed_pages": "Contents: printed number not found (PDF label 1); policy unnumbered (PDF label 2); 163; 164; 165",
+      "notes": "A corporate-information page names an Accounting Auditor, but naming the auditor is not an auditor’s report or proof this summary was audited.",
+      "evidence": [
+        {
+          "page": 164,
+          "quote": "Financial Summary (Consolidated)"
+        },
+        {
+          "page": 3,
+          "quote": "More detailed"
+        },
+        {
+          "page": 166,
+          "quote": "Accounting Auditor PricewaterhouseCoopers Japan LLC"
+        }
+      ]
+    },
+    {
+      "report": "toyota",
+      "item": "6b. Full audited statements and auditor’s report",
+      "status": "not found",
+      "observation": "No full audited consolidated financial statements or independent auditor’s report were found in this uploaded integrated report.",
+      "pdf_pages": "Entire file: 1–168; contents 2; editorial policy 3; summary 164–165",
+      "printed_pages": "Contents: printed number not found (PDF label 1); policy unnumbered (PDF label 2); summary 163–164",
+      "notes": "Based on contents, document-wide machine-readable text search, and inspection of the financial section. This absence finding is limited by text extraction and is not a claim about separate Toyota filings. No external links were opened.",
+      "evidence": []
+    },
+    {
+      "report": "toyota",
+      "item": "7. Consolidated income-statement location and exact title",
+      "status": "not found",
+      "observation": "A consolidated income statement was not found. No PDF/printed statement page or exact statement title can be recorded. Financial Summary (Consolidated) is a summary title, not an income-statement title.",
+      "pdf_pages": "Entire file: 1–168; summary 164–165",
+      "printed_pages": "Summary 163–164",
+      "notes": "The requested statement is not silently replaced by the summary.",
+      "evidence": [
+        {
+          "page": 164,
+          "quote": "Financial Summary (Consolidated)"
+        }
+      ]
+    },
+    {
+      "report": "toyota",
+      "item": "8a. Revenue row label in consolidated income statement",
+      "status": "not found",
+      "observation": "Not found: the requested consolidated income statement is absent from the inspected text.",
+      "pdf_pages": "Entire file: 1–168",
+      "printed_pages": "Not found",
+      "notes": "Summary labels are recorded separately below.",
+      "evidence": []
+    },
+    {
+      "report": "toyota",
+      "item": "8b. Operating-profit row label in consolidated income statement",
+      "status": "not found",
+      "observation": "Not found: the requested consolidated income statement is absent from the inspected text.",
+      "pdf_pages": "Entire file: 1–168",
+      "printed_pages": "Not found",
+      "notes": "Summary labels are recorded separately below.",
+      "evidence": []
+    },
+    {
+      "report": "toyota",
+      "item": "8c. Labels in summary only",
+      "status": "observed in the document",
+      "observation": "Sales revenues; Operating income. Historical U.S. GAAP revenue label also shown: Net revenues.",
+      "pdf_pages": "164",
+      "printed_pages": "163",
+      "notes": "Exact labels only, with typographic spacing normalized. These are summary labels, not labels observed in a full consolidated income statement.",
+      "evidence": [
+        {
+          "page": 164,
+          "quote": "Net revenues Sales revenues"
+        },
+        {
+          "page": 164,
+          "quote": "Operating income Operating income"
+        }
+      ]
+    },
+    {
+      "report": "toyota",
+      "item": "9a. Total page count",
+      "status": "observed in the document",
+      "observation": "168 PDF pages.",
+      "pdf_pages": "Entire file: 1–168",
+      "printed_pages": "Not applicable: PDF-level page count",
+      "notes": "PDF page 164 has printed page 163. Page references in this inventory are one-based PDF positions.",
+      "evidence": []
+    },
+    {
+      "report": "toyota",
+      "item": "9b. Text machine-readability",
+      "status": "observed in the document",
+      "observation": "Machine-readable text is present: 167 of 168 PDF pages yield more than 100 text characters after trimming leading/trailing whitespace with pypdf. Editorial policy and summary labels are readable, but some chart numerals appear as font glyph names.",
+      "pdf_pages": "Entire file: 1–168; examples 3; 164–165",
+      "printed_pages": "Policy unnumbered (PDF label 2); 163–164",
+      "notes": "pypdf warned that optional fontTools is unavailable for some CFF Type1 font encodings. Character coverage does not establish accurate chart or numeric decoding. No optional package was installed, no chart numerals were decoded, and no OCR or financial-page visual-layout validation was performed.",
+      "evidence": [
+        {
+          "page": 3,
+          "quote": "Reporting Period"
+        },
+        {
+          "page": 164,
+          "quote": "Financial Summary (Consolidated)"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "1. Document title and type",
+      "status": "observed in the document",
+      "observation": "FORM 20-F. Filing type as printed: ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934.",
+      "pdf_pages": "1",
+      "printed_pages": "Cover unnumbered",
+      "notes": "Title/type only; statutory section references are not financial amounts.",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "FORM 20-F"
+        },
+        {
+          "page": 1,
+          "quote": "ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d)"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "2. Company, legal entity, and group scope",
+      "status": "observed in the document",
+      "observation": "TOYOTA JIDOSHA KABUSHIKI KAISHA (exact registrant name); TOYOTA MOTOR CORPORATION (English translation). Consolidated statements cover TMC, its subsidiaries, and interests in associates and joint ventures.",
+      "pdf_pages": "1; 174; 183",
+      "printed_pages": "Cover unnumbered; F-2; F-11",
+      "notes": "The consolidated group is distinct from business-type and segment tables.",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "TOYOTA JIDOSHA KABUSHIKI KAISHA"
+        },
+        {
+          "page": 1,
+          "quote": "TOYOTA MOTOR CORPORATION"
+        },
+        {
+          "page": 183,
+          "quote": "its consolidated subsidiaries (collectively, “Toyota”) and their interests in associates and joint ventures."
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "3. Reporting period",
+      "status": "observed in the document",
+      "observation": "Fiscal 2025: 1 April 2024 to 31 March 2025.",
+      "pdf_pages": "1; 4; 178; 181",
+      "printed_pages": "Cover unnumbered; printed number not found on PDF 4; F-6; F-9",
+      "notes": "Cover states the year-end; PDF 4 defines fiscal as the twelve-month period ended March 31. The changes-in-equity statement confirms the opening date with the label Balances at April 1, 2024.",
+      "evidence": [
+        {
+          "page": 1,
+          "quote": "For the fiscal year ended: March 31, 2025"
+        },
+        {
+          "page": 4,
+          "quote": "the twelve-month period ended"
+        },
+        {
+          "page": 181,
+          "quote": "Balances at April 1, 2024"
+        },
+        {
+          "page": 178,
+          "quote": "March 31, 2025"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "4. Reporting currency and statement units",
+      "status": "observed in the document",
+      "observation": "Japanese yen. Income statement header: Yen in millions. Notes state rounding to the nearest million Japanese yen unless otherwise indicated.",
+      "pdf_pages": "178; 183",
+      "printed_pages": "F-6; F-11",
+      "notes": "The statement separately labels per-share amounts in Yen; no amounts are recorded. These statement units differ from the integrated summary’s Billions of yen.",
+      "evidence": [
+        {
+          "page": 178,
+          "quote": "Yen in millions"
+        },
+        {
+          "page": 183,
+          "quote": "The consolidated financial statements are presented in Japanese yen"
+        },
+        {
+          "page": 183,
+          "quote": "rounded to the nearest million Japanese yen"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "5. Accounting standard",
+      "status": "observed in the document",
+      "observation": "IFRS Accounting Standards as issued by the International Accounting Standards Board (IASB).",
+      "pdf_pages": "4; 174; 183",
+      "printed_pages": "Printed number not found on PDF 4; F-2; F-11",
+      "notes": "This is the stated accounting basis; no assumption of identical definitions to EU-endorsed IFRS reporters is made.",
+      "evidence": [
+        {
+          "page": 183,
+          "quote": "Toyota’s consolidated financial statements have been prepared in accordance with IFRS Accounting"
+        },
+        {
+          "page": 183,
+          "quote": "Standards as issued by the IASB."
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "6. Full statements and auditor report",
+      "status": "observed in the document",
+      "observation": "Full audited consolidated financial statements are present. INDEX TO CONSOLIDATED FINANCIAL STATEMENTS starts at PDF 173 (F-1). Report of Independent Registered Public Accounting Firm starts at PDF 174 (F-2); notes start at PDF 183 (F-11).",
+      "pdf_pages": "173; 174; 183",
+      "printed_pages": "F-1; F-2; F-11",
+      "notes": "The auditor identifies statements of financial position, income, comprehensive income, changes in equity, cash flows, and related notes. Presence and stated audit scope recorded only.",
+      "evidence": [
+        {
+          "page": 173,
+          "quote": "INDEX TO CONSOLIDATED FINANCIAL STATEMENTS"
+        },
+        {
+          "page": 174,
+          "quote": "Report of Independent Registered Public Accounting Firm"
+        },
+        {
+          "page": 174,
+          "quote": "We have audited the accompanying consolidated statements"
+        },
+        {
+          "page": 183,
+          "quote": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "7. Consolidated income-statement location and exact title",
+      "status": "observed in the document",
+      "observation": "CONSOLIDATED STATEMENT OF INCOME. PDF page 178; printed page F-6.",
+      "pdf_pages": "178",
+      "printed_pages": "F-6",
+      "notes": "Use this consolidated statement as the user-designated Toyota source, rather than the summary-only integrated report or other tables identified below.",
+      "evidence": [
+        {
+          "page": 178,
+          "quote": "CONSOLIDATED STATEMENT OF INCOME"
+        },
+        {
+          "page": 178,
+          "quote": "F-6"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "8a. Revenue candidate row label",
+      "status": "observed in the document",
+      "observation": "Total sales revenues",
+      "pdf_pages": "178",
+      "printed_pages": "F-6",
+      "notes": "The heading Sales revenues also appears above its component rows. The candidate total-row label is recorded exactly; no values are transcribed.",
+      "evidence": [
+        {
+          "page": 178,
+          "quote": "Total sales revenues"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "8b. Operating-profit candidate row label",
+      "status": "observed in the document",
+      "observation": "Operating income",
+      "pdf_pages": "178",
+      "printed_pages": "F-6",
+      "notes": "Label only; cross-company metric equivalence is not yet established.",
+      "evidence": [
+        {
+          "page": 178,
+          "quote": "Operating income"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "9a. Total page count",
+      "status": "observed in the document",
+      "observation": "284 PDF pages.",
+      "pdf_pages": "Entire file: 1–284",
+      "printed_pages": "Not applicable: PDF-level page count",
+      "notes": "Count obtained from the PDF page tree; validated by the generating script.",
+      "evidence": []
+    },
+    {
+      "report": "toyota_20f",
+      "item": "9b. Text machine-readability",
+      "status": "observed in the document",
+      "observation": "Machine-readable text is present: 283 of 284 PDF pages yield more than 100 text characters after trimming leading/trailing whitespace with pypdf. The statement title, labels, dates, units, and audit/basis text are readable.",
+      "pdf_pages": "Entire file: 1–284; examples 174; 178; 183",
+      "printed_pages": "Examples F-2; F-6; F-11",
+      "notes": "Optional fontTools warnings also occur for some fonts in this document. Text coverage is not a decoding-accuracy score. No OCR, optional-package installation, or financial-page rendering was performed.",
+      "evidence": [
+        {
+          "page": 178,
+          "quote": "CONSOLIDATED STATEMENT OF INCOME"
+        },
+        {
+          "page": 178,
+          "quote": "Total sales revenues"
+        },
+        {
+          "page": 183,
+          "quote": "Basis of preparation"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "10. More than one year on the consolidated income statement",
+      "status": "observed in the document",
+      "observation": "Yes. Three columns are headed For the year ended March 31, 2023; For the year ended March 31, 2024; and For the year ended March 31, 2025.",
+      "pdf_pages": "178",
+      "printed_pages": "F-6",
+      "notes": "Dates and column structure only. No figures from any year are recorded.",
+      "evidence": [
+        {
+          "page": 178,
+          "quote": "March 31, 2023"
+        },
+        {
+          "page": 178,
+          "quote": "March 31, 2024"
+        },
+        {
+          "page": 178,
+          "quote": "March 31, 2025"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "11a. Other income-statement-like table",
+      "status": "observed in the document",
+      "observation": "(ii) Consolidated Statement of Income on Non-Financial Services Businesses and Financial Services Business",
+      "pdf_pages": "200",
+      "printed_pages": "F-28",
+      "notes": "Titles and pages only.",
+      "evidence": [
+        {
+          "page": 200,
+          "quote": "(ii) Consolidated Statement of Income on Non-Financial Services Businesses and Financial Services\nBusiness"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "11b. Other income-statement-like tables",
+      "status": "observed in the document",
+      "observation": "5. Segment information / (2) Segment information",
+      "pdf_pages": "196–197",
+      "printed_pages": "F-24–F-25",
+      "notes": "Titles and pages only.",
+      "evidence": [
+        {
+          "page": 196,
+          "quote": "5. Segment information"
+        },
+        {
+          "page": 196,
+          "quote": "(2) Segment information"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "11c. Other income-statement-like tables",
+      "status": "observed in the document",
+      "observation": "(4) Geographic information",
+      "pdf_pages": "203–204",
+      "printed_pages": "F-31–F-32",
+      "notes": "Titles and pages only.",
+      "evidence": [
+        {
+          "page": 203,
+          "quote": "(4) Geographic information"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "11d. Other income-statement-like table",
+      "status": "observed in the document",
+      "observation": "Results of Operations — Fiscal 2025 Compared with Fiscal 2024",
+      "pdf_pages": "92",
+      "printed_pages": "87",
+      "notes": "Titles and pages only.",
+      "evidence": [
+        {
+          "page": 92,
+          "quote": "Results of Operations — Fiscal 2025 Compared with Fiscal 2024"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "11e. Other income-statement-like table",
+      "status": "observed in the document",
+      "observation": "Results of Operations — Fiscal 2024 Compared with Fiscal 2023",
+      "pdf_pages": "101",
+      "printed_pages": "96",
+      "notes": "Titles and pages only.",
+      "evidence": [
+        {
+          "page": 101,
+          "quote": "Results of Operations — Fiscal 2024 Compared with Fiscal 2023"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "11f. Other income-statement-like tables",
+      "status": "observed in the document",
+      "observation": "Segment Information",
+      "pdf_pages": "100; 109",
+      "printed_pages": "95; 104",
+      "notes": "Titles and pages only.",
+      "evidence": [
+        {
+          "page": 100,
+          "quote": "Segment Information"
+        },
+        {
+          "page": 109,
+          "quote": "Segment Information"
+        }
+      ]
+    },
+    {
+      "report": "toyota_20f",
+      "item": "11g. Related statement with a similar title",
+      "status": "observed in the document",
+      "observation": "CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME",
+      "pdf_pages": "179",
+      "printed_pages": "F-7",
+      "notes": "Titles and pages only.",
+      "evidence": [
+        {
+          "page": 179,
+          "quote": "CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME"
+        }
+      ]
+    }
+  ],
+  "document_checks": {
+    "bmw": {
+      "page_count": 434,
+      "readable_pages": 433
+    },
+    "mercedes": {
+      "page_count": 409,
+      "readable_pages": 404
+    },
+    "toyota": {
+      "page_count": 168,
+      "readable_pages": 167,
+      "absent_terms": [
+        "consolidated statement of income",
+        "consolidated statements of income",
+        "consolidated statement of profit",
+        "income statement",
+        "independent auditor",
+        "audit opinion",
+        "financial statements"
+      ]
+    },
+    "toyota_20f": {
+      "page_count": 284,
+      "readable_pages": 283
+    }
+  },
+  "concerns": [
+    "Period mismatch (observed): BMW and Mercedes-Benz cover 1 January–31 December 2025 (BMW PDF 6/365; Mercedes-Benz PDF 390). Toyota’s fiscal 2025 covers 1 April 2024–31 March 2025 and its integrated-report policy also refers to fiscal 2026 (Toyota PDF 3). The title year alone does not define a common financial period.",
+    "Currency and scale mismatch (observed): BMW and Mercedes-Benz statements use millions of euros (BMW PDF 271/279; Mercedes-Benz PDF 252/259). Toyota’s Form 20-F uses millions of Japanese yen (PDF 178/183), while its integrated summary uses billions of yen (PDF 164). Absolute monetary comparisons would require an agreed conversion and unit treatment. No conversion or financial comparison was performed.",
+    "Document type and source selection (observed): BMW, Mercedes-Benz, and Toyota’s Form 20-F contain full consolidated statements and auditor reports. Toyota’s integrated report contains summary information; full statements and an auditor report were not found in that file. The user designates the Form 20-F as Toyota’s audited source and retains the integrated report as a deliberate hard case. The two Toyota documents are not two companies or independent observations.",
+    "Profit-definition compatibility (uncertain): BMW’s candidate is Profit/loss before financial result (PDF 271); Mercedes-Benz’s is Earnings before interest and taxes (EBIT) (PDF 252); Toyota’s Form 20-F says Operating income (PDF 178). Labels are not proof of equivalence. Mercedes-Benz lists equity-method gains/losses and other financial income/expense above EBIT; BMW presents equity-accounted and other financial-result lines below its candidate. A uniform operating-profit definition has not been established.",
+    "Consolidated versus segment scope (observed): BMW’s statement presents Group and segment columns together, with segment columns marked unaudited supplementary information (PDF 271). These must not be confused. Mercedes-Benz likewise contains segment and adjusted presentations elsewhere; the audited consolidated statement is PDF 252. Toyota’s consolidated summary is not an automotive-segment-only table.",
+    "Accounting basis and year selection (observed / uncertain): BMW and Mercedes-Benz state EU-endorsed IFRS plus German-law requirements. Toyota’s Form 20-F states IFRS Accounting Standards as issued by the IASB and its income statement includes years ended March 31, 2023, 2024, and 2025 (PDF 178). Toyota’s integrated historical summary labels U.S. GAAP and IFRS. Neither a shared IFRS label nor a report title establishes identical definitions or the intended year column.",
+    "Extraction-layout limitations (observed): PDF and printed pages differ in Toyota. Toyota chart fonts produce some glyph-name tokens with the installed reader; BMW uses a wide table with multiple scope/year columns. Machine-readable text does not by itself establish reliable numerical extraction. No OCR or numeric extraction was attempted.",
+    "Confusable Toyota tables (observed): The Form 20-F contains additional business-type, segment, geographic, management-review, and comprehensive-income tables. Exact titles and pages are listed under Toyota Form 20-F items 11a–11g. Their presence must not displace the consolidated income statement on PDF 178 (F-6)."
+  ]
+}

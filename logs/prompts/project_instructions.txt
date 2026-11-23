@@ -1,0 +1,114 @@
+The project-specific instructions below update the general instructions in general_instructions.txt.
+
+We have now selected the project direction and a provisional research question: building and evaluating a simple annual-report comparison tool. Do not restart topic selection or suggest unrelated project ideas.
+
+Automotive annual reports will be the initial pilot inputs, not the limit of the tool's intended scope.
+
+For this project, first inspect report coverage and structure, then agree with me on the evaluation plan before extracting financial results. After extraction, produce the initial report and guide me through checking three claims independently.
+
+Apply the general assignment, reproducibility, verification, and mistake-tracking rules throughout. Where the two files differ on project scope or sequence, follow these project-specific instructions, while preserving the assignment's requirements.
+
+## Project objective and research question
+
+Build and evaluate a simple AI-assisted tool that extracts financial metrics from uploaded annual reports and produces clear, source-traceable company comparisons.
+
+Research question:
+
+“How accurately and consistently can an AI agent extract financial metrics from annual reports and use them to produce comparable company summaries?”
+
+The tool is intended to support companies from different industries. Automotive annual reports are only the initial pilot inputs used to develop and test the workflow. Do not make automotive profitability the overarching research question.
+
+“Training” here means refining instructions and testing the workflow. We are not training or fine-tuning the underlying model.
+
+## Keep the implementation simple
+
+Create a minimal workflow:
+
+1. Accept uploaded annual-report PDFs.
+2. Identify the company, reporting period, currency, and units.
+3. Extract a small, agreed set of financial metrics with source references.
+4. Check whether the figures are comparable.
+5. Calculate agreed ratios using reproducible Python code.
+6. Produce a comparison table and a short explanation of findings and limitations.
+
+A script-based workflow with saved tables is sufficient. Do not build a website, complex interface, database, or multi-agent system.
+
+Initially, use only reports I upload. Finding and downloading annual reports may be a future extension; do not implement it now.
+
+## Pilot scope
+
+Start with approximately three automotive companies and one common financial year, depending on the reports available.
+
+Begin with:
+- Revenue.
+- Operating profit.
+- Operating profit margin = operating profit / revenue × 100.
+
+Keep metric definitions configurable rather than embedding assumptions that apply only to automotive companies. However, do not add more metrics or sectors until the minimal pilot works and I approve an expansion.
+
+For a new industry, reassess whether the chosen metrics are appropriate. Do not assume operating profit has a uniform definition across all companies or industries.
+
+## Extraction and comparison rules
+
+For each extracted number, retain:
+- Report filename.
+- Company and financial year.
+- PDF page and printed page number, where available.
+- Table or section title.
+- Exact source label.
+- Value, currency, and units.
+- Consolidated or segment scope.
+- Reported, adjusted, or restated status.
+
+Prefer audited consolidated statements. Never silently substitute adjusted profit, EBITDA, net income, or segment profit for operating profit.
+
+Keep extracted values separate from calculated metrics. Preserve original reports unchanged.
+
+Compare only compatible periods, scopes, definitions, and units. When compatibility is uncertain, flag it and explain the limitation instead of forcing a ranking.
+
+Do not compare absolute monetary values across different currencies without an agreed conversion method. Ratios can be calculated without conversion when their numerator and denominator use the same currency and units.
+
+Never guess missing or ambiguous figures. An explicit “not found” or “not comparable” is an acceptable outcome.
+
+## Evaluation methodology
+
+Before examining the pilot results, help me agree on:
+- The expected performance of the tool and the reasoning behind that expectation.
+- A measurable result that would contradict that expectation.
+- What counts as a correct extraction.
+- How missing values and abstentions will be counted.
+- How calculation accuracy and comparability decisions will be checked.
+
+Evaluate the tool using a small reference table that I independently check against the original reports.
+
+Report:
+- Correctly extracted fields as a count and proportion of required fields.
+- Missing or incorrectly extracted fields.
+- Whether the calculated margins match independent calculations.
+- Any misleading comparisons caused by inconsistent definitions, periods, or scope.
+- Agreement and differences between the supervised and autonomous runs.
+
+Always show the denominator behind any accuracy percentage. With such a small sample, describe results as pilot evidence rather than a general estimate of reliability.
+
+Keep development and evaluation distinct. Record which reports were used to refine the instructions. If feasible, reserve one report for testing after the instructions are fixed. If all reports inform refinement, disclose that the evaluation uses development examples.
+
+Do not repeatedly revise the workflow on a test report and continue calling that report an unseen test.
+
+## Assignment requirements remain in force
+
+Retain the assignment’s requirements for:
+- Three independently checked claims from the initial report.
+- A supervised versus autonomous workflow comparison.
+- Independent recomputation of the headline numerical result.
+- A separate fresh-session or different-model comparison.
+- Actual mistake tracking.
+- Reproducible scripts and traceable outputs.
+- Analysis, Reflection, and Verification evidence.
+
+For this tool-focused project, help me identify a suitable headline result and agree on how I will verify it without the agent.
+
+The final submission should explain what the tool does, how the pilot tested it, where it failed, and what the evidence does and does not establish. Cross-industry capability is an intended extension until tested.
+
+## Next step
+
+Ask me to upload the initial annual reports. First inspect their coverage and structure, then propose the smallest feasible pilot and evaluation plan for my approval. Do not begin extracting analytical results before we agree on the evaluation criteria.

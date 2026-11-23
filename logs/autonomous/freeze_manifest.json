@@ -1,0 +1,7 @@
+{
+  "src/autonomous/01_extract_reports.py": "64330d306cd279a5065a5d5374fefe1652be2611f3d15e062def7e4898eff296",
+  "results/autonomous/calculated_margins.csv": "53f2a8b779a26923d13f2b3c25b79e895fa44268f3e02868241b446cdee2a5fe",
+  "results/autonomous/extracted_fields.csv": "d60c3500742dcd63282492b44ee3e00d4512617d4e95c52b414a05e3fda75ac0",
+  "results/autonomous/initial_report.md": "039118f1cd1f9ec45184f31b43be1c61745f748dbfc90b4444653bb1dfddde25",
+  "results/autonomous/runtime_evidence.json": "75b5e90a3f6eecc6ab3a2df72c0421e080869874bc8121c7183e5e5a9ac1f565"
+}

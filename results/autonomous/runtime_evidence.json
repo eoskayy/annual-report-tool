@@ -1,0 +1,1224 @@
+{
+  "generating_script": "src/autonomous/01_extract_reports.py",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "pypdf": "6.21.4",
+  "raw_sha256": {
+    "bmw_group_report_2025.pdf": "970c0792d4d3600412564b4048cf38606b56151a5cef44598b09e115b85cf199",
+    "mercedes_benz_group_annual_report_2025.pdf": "14a69ab18bdaee49d9314ffe21aa88fafb0d954ab25518e2eac0cb444cd19da7",
+    "toyota_form_20f_fy2025.pdf": "1eebae72a6d05de574198408f61ec392df18b9ed137e65a9df1254ad25940d9d",
+    "toyota_integrated_report_2025.pdf": "12dd23ff8d800061e233705329842fc5c9aef62f44075740fc4ed83149a2f592"
+  },
+  "sources": {
+    "bmw_group_report_2025.pdf": {
+      "statement_pdf_page": 271,
+      "statement_printed_page": "271",
+      "statement_text": "271              BMW Group Report 2025            To Our Stakeholders          Combined Management Report             Group Financial Statements         Responsibility Statement and Auditor\u2019s Report           Remuneration Report          Other Information\n\n                                                                                                                       Income Statement for Group and Segments\n\nINCOME STATEMENT\nFOR GROUP AND SEGMENTS\n\n                                                                                                                                                    Automotive                             Motorcycles                     Financial Services                           Other Entities                           Eliminations\n                                                                                                                                        (unaudited supplementary               (unaudited supplementary                (unaudited supplementary                (unaudited supplementary               (unaudited supplementary\n                                                                                                                    Group                              information)                           information)                            information)                            information)                           information)\n\n\nin \u20ac million                                                                  Note               2025                2024                2025               2024                2025                2024                2025                2024                2025               2024                2025                2024\n\nRevenues                                                                          7          133,453            142,380              117,557            124,917                 3,143              3,220             39,806              38,562                    12                  14         \u2013 27,065            \u2013 24,333\n\nCost of sales                                                                     8        \u2013 112,858          \u2013 119,485           \u2013 103,206           \u2013 107,729              \u2013 2,687             \u2013 2,721           \u2013 35,260            \u2013 34,183                      \u2013                  \u2013            28,295             25,148\n\nGross profit                                                                                   20,595             22,895              14,351              17,188                  456                 499              4,546               4,379                   12                  14             1,230                 815\n\nSelling and administrative expenses                                               9         \u2013 10,606            \u2013 11,296              \u2013 8,431            \u2013 9,357                \u2013 269              \u2013 296             \u2013 1,909            \u2013 1,675                  \u2013 43               \u2013 41                   46                 73\n\nOther operating income                                                           10             1,556               1,411               1,462              1,335                      4                  4                 49                  59                  38                  23                   3               \u2013 10\n\nOther operating expenses                                                         10           \u2013 1,359             \u2013 1,501             \u2013 1,123            \u2013 1,273                  \u2013 13                 \u2013 9             \u2013 275               \u2013 252                   \u2013 7              \u2013 21                   59                 54\n\nProfit/loss before financial result                                                            10,186             11,509                6,259              7,893                  178                 198              2,411               2,511                     \u2013              \u2013 25              1,338                 932\n\n   Result from equity accounted investments                                      24                  38               \u2013 14                  38                \u2013 14                    \u2013                  \u2013                   \u2013                   \u2013                   \u2013                  \u2013                   \u2013                   \u2013\n\n   Interest and similar income                                                   11                502                655               1,049              1,363                      3                  5                 12                  10              4,474              4,593             \u2013 5,036             \u2013 5,316\n\n   Interest and similar expenses                                                 11              \u2013 562              \u2013 573             \u2013 1,401            \u2013 1,572                   \u2013 7                 \u2013 5               \u2013 48                \u2013 20            \u2013 3,433            \u2013 3,214               4,327               4,238\n\n   Other financial result                                                        12                  72             \u2013 606                     \u2013             \u2013 126                     \u2013                  \u2013                 26                  37                  46              \u2013 517                    \u2013                   \u2013\n\nFinancial result                                                                                     50             \u2013 538               \u2013 314               \u2013 349                  \u2013 4                   \u2013               \u2013 10                  27              1,087                 862               \u2013 709            \u2013 1,078\n\nProfit/loss before tax                                                                         10,236             10,971                5,945              7,544                  174                 198              2,401               2,538               1,087                 837                 629              \u2013 146\n\nIncome taxes                                                                     13           \u2013 2,785             \u2013 3,293             \u2013 1,626            \u2013 2,262                  \u2013 47               \u2013 60              \u2013 654               \u2013 735               \u2013 297               \u2013 241               \u2013 161                    5\n\nNet profit/loss                                                                                 7,451               7,678               4,319              5,282                  127                 138              1,747               1,803                 790                 596                 468              \u2013 141\n\nAttributable to non-controlling interests                                                          157                388                  169                392                     \u2013                  \u2013               \u2013 13                 \u2013 5                    1                  1                   \u2013                   \u2013\n\nAttributable to shareholders of BMW AG                                                          7,294               7,290               4,150              4,890                  127                 138              1,760               1,808                 789                 595                 468              \u2013 141\n\nBasic earnings per ordinary share in \u20ac                                           14             11.89               11.62\n\nBasic earnings per preferred share in \u20ac                                          14             11.91               11.64\n\nDilutive effects                                                                                      \u2013                   \u2013\n\nDiluted earnings per ordinary share in \u20ac                                         14             11.89               11.62\n\nDiluted earnings per preferred share in \u20ac                                        14             11.91               11.64\n\n\n\n",
+      "revenue_row": "Revenues                                                                          7          133,453            142,380              117,557            124,917                 3,143              3,220             39,806              38,562                    12                  14         \u2013 27,065            \u2013 24,333",
+      "profit_row": "Profit/loss before financial result                                                            10,186             11,509                6,259              7,893                  178                 198              2,411               2,511                     \u2013              \u2013 25              1,338                 932",
+      "revenue_printed_token": "133,453",
+      "profit_printed_token": "10,186",
+      "year_headers": [
+        "2025",
+        "2024",
+        "2025",
+        "2024",
+        "2025",
+        "2024",
+        "2025",
+        "2024",
+        "2025",
+        "2024",
+        "2025",
+        "2024"
+      ],
+      "period_end_candidates": [
+        [
+          "2025-12-31",
+          4,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          6,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          6,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          15,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          20,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          21,
+          "31 December\n             2025"
+        ],
+        [
+          "2025-12-31",
+          21,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          33,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          35,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          71,
+          "31      December 2025"
+        ],
+        [
+          "2025-12-31",
+          71,
+          "31       December 2025"
+        ],
+        [
+          "2025-12-31",
+          73,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          73,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          74,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          74,
+          "31     December 2025"
+        ],
+        [
+          "2025-12-31",
+          85,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          85,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          88,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          95,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          108,
+          "31       December 2025"
+        ],
+        [
+          "2025-12-31",
+          142,
+          "31      December 2025"
+        ],
+        [
+          "2025-12-31",
+          267,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          270,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          270,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          273,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          274,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          277,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          277,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          279,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          279,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          305,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          305,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          305,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          307,
+          "31       December 2025"
+        ],
+        [
+          "2025-12-31",
+          308,
+          "31        December 2025"
+        ],
+        [
+          "2025-12-31",
+          309,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          309,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          310,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          312,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          316,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          327,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          329,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          333,
+          "31        December 2025"
+        ],
+        [
+          "2025-12-31",
+          334,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          342,
+          "31       December 2025"
+        ],
+        [
+          "2025-12-31",
+          351,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          351,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          358,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          360,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          361,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          365,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          365,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          365,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          367,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          372,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          392,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          396,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          397,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          398,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          399,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          399,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          419,
+          "December 31, 2025"
+        ]
+      ],
+      "period_start_candidates": [
+        [
+          "2025-01-01",
+          17,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          114,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          277,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          305,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          312,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          329,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          379,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          379,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          388,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          407,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          411,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          413,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          419,
+          "January 1, 2025"
+        ],
+        [
+          "2025-01-01",
+          419,
+          "January 1, 2025"
+        ]
+      ]
+    },
+    "mercedes_benz_group_annual_report_2025.pdf": {
+      "statement_pdf_page": 252,
+      "statement_printed_page": "252",
+      "statement_text": "Annual Report 2025 | Mercedes-Benz Group                                                                                                                                                                                                                   252\nTo Our Shareholders                            Combined Management Report                          Declaration on Corporate Governance               Consolidated Financial Statements                              Further Information\n                                                                                                                                                                                                                                                                                     Consolidated Statement of Income\n\nConsolidated Statement of Income\n\n\n\n                                                                                                                                                                                                                                                                                                                                                                   Note                          2025                       2024\n In millions of euros\n\n\n Revenue                                                                                                                                                                                                                                                                                                                 4                     132,214                   145,594\n Cost of sales                                                                                                                                                                                                                                                                                                          5                   -109,881                   -117,018\n Gross profit in relation to revenue                                                                                                                                                                                                                                                                                                                                22,333                    28,576\n Selling expenses                                                                                                                                                                                                                                                                                                    5                        -9,718                     -9,993\n General administrative expenses                                                                                                                                                                                                                                                                         5                        -2,477                     -2,529\n Research and non-capitalized development costs                                                                                                                                                                                                                                             5                       -6,055                     -5,580\n Other operating income                                                                                                                                                                                                                                                                                        6                          1,551                       2,507\n Other operating expense                                                                                                                                                                                                                                                                                      6                       -1,025                        -483\n Gains/losses on equity-method investments, net                                                                                                                                                                                                                                             13                          1,118                        1,138\n Other financial income/expense, net                                                                                                                                                                                                                                                                   7                               93                          -37\n Earnings before interest and taxes (EBIT)                                                                                                                                                                                                                                                     33                         5,820                     13,599\n Interest income                                                                                                                                                                                                                                                                                                     8                             623                          738\n Interest expense                                                                                                                                                                                                                                                                                                   8                           -159                        -190\n Profit before income taxes                                                                                                                                                                                                                                                                                                                                                 6,284                      14,147\n Income taxes                                                                                                                                                                                                                                                                                                         9                           -953                     -3,738\n Net profit                                                                                                                                                                                                                                                                                                                                                                                    5,331                     10,409\n     thereof profit attributable to non-controlling interests                                                                                                                                                                                                                                                                                                 190                         202\n     thereof share of the net profit attributable to shareholders of Mercedes-Benz Group AG                                                                                                                                                                                                                              5,141                     10,207\n\n\n Earnings per share (in euros)\n For profit attributable to shareholders of Mercedes-Benz Group AG                                                                                                                                                                                                             35\n Basic                                                                                                                                                                                                                                                                                                                                                                                               5.34                        10.19\n Diluted                                                                                                                                                                                                                                                                                                                                                                                           5.34                        10.19",
+      "revenue_row": "Revenue                                                                                                                                                                                                                                                                                                                 4                     132,214                   145,594",
+      "profit_row": "Earnings before interest and taxes (EBIT)                                                                                                                                                                                                                                                     33                         5,820                     13,599",
+      "revenue_printed_token": "132,214",
+      "profit_printed_token": "5,820",
+      "year_headers": [
+        "2025",
+        "2024"
+      ],
+      "period_end_candidates": [
+        [
+          "2025-12-31",
+          14,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          23,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          25,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          25,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          27,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          27,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          29,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          62,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          62,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          63,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          65,
+          "31 December\n                                                                                                                                                                                                                             2025"
+        ],
+        [
+          "2025-12-31",
+          66,
+          "31 December\n                                                                                                                                                                                                                                                  2025"
+        ],
+        [
+          "2025-12-31",
+          71,
+          "31 December\n                                                                                                                                                                                                                                                                                 2025"
+        ],
+        [
+          "2025-12-31",
+          76,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          76,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          79,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          85,
+          "31\u00a0December\u00a02025"
+        ],
+        [
+          "2025-12-31",
+          87,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          91,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          91,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          91,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          104,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          109,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          109,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          109,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          109,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          110,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          180,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          181,
+          "31 December                                                                                       2025"
+        ],
+        [
+          "2025-12-31",
+          181,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          188,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          230,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          231,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          233,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          233,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          236,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          236,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          236,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          237,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          237,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          237,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          237,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          237,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          238,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          238,
+          "31                                                                                                                                                                                                                                                                                                                                                                                                              \u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          238,
+          "31                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          238,
+          "31                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          240,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          240,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          240,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          240,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          241,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          242,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          258,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          259,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          259,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          260,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          260,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          284,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          284,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          285,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          285,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          285,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          286,
+          "31 December\n                                                                                                                                                                                    2025"
+        ],
+        [
+          "2025-12-31",
+          287,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          287,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          288,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          288,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          290,
+          "31\u00a0December\u00a02025"
+        ],
+        [
+          "2025-12-31",
+          295,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          296,
+          "31 December\n                                                                                                                                                                                                                                                                                                                                       2025"
+        ],
+        [
+          "2025-12-31",
+          297,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          297,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          297,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          298,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          298,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          298,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          300,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          300,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          300,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          301,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          301,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          301,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          301,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          306,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          306,
+          "31 December\n                                                                                                                                                                                                                                                                             2025"
+        ],
+        [
+          "2025-12-31",
+          309,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          309,
+          "31 December\n                                                                                                                                                                                                                                                                           2025"
+        ],
+        [
+          "2025-12-31",
+          310,
+          "31 December\n                                                                                                                                                                                                                                                                                                                     2025"
+        ],
+        [
+          "2025-12-31",
+          311,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          311,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          311,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          313,
+          "31 December\n                                                                                                                                                                                                                                        2025"
+        ],
+        [
+          "2025-12-31",
+          314,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          315,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          316,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          317,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          319,
+          "31 December\n                                                                                                                                                                                                                                                        2025"
+        ],
+        [
+          "2025-12-31",
+          325,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          326,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          326,
+          "31 December\n                                                                                                                                                                                                                                                                                                     2025"
+        ],
+        [
+          "2025-12-31",
+          327,
+          "31 December\n                                                                                                                                                                                                                                                                                                                  2025"
+        ],
+        [
+          "2025-12-31",
+          328,
+          "31 December\n                                                                                  2025"
+        ],
+        [
+          "2025-12-31",
+          329,
+          "31 December\n                                                                                                                                                                                                                                                                                                                         2025"
+        ],
+        [
+          "2025-12-31",
+          330,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          334,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          334,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          334,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          335,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          337,
+          "31 December\n                                                                                                                                                                                                                                                                                                                             2025"
+        ],
+        [
+          "2025-12-31",
+          338,
+          "31 December\n                                                                                                                                                                                               2025"
+        ],
+        [
+          "2025-12-31",
+          339,
+          "31 December\n                                                                                                                                                                                                                                                                   2025"
+        ],
+        [
+          "2025-12-31",
+          340,
+          "31 December\n                                                                                                                                                                                                                                                                         2025"
+        ],
+        [
+          "2025-12-31",
+          341,
+          "31 December\n                                                                                                                                                                                                                                                               2025"
+        ],
+        [
+          "2025-12-31",
+          342,
+          "31 December\n                                                                                                                                                                                                                                                                                                                                                                                       2025"
+        ],
+        [
+          "2025-12-31",
+          344,
+          "31 December\n                                                                                                                                                                                                2025"
+        ],
+        [
+          "2025-12-31",
+          349,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          349,
+          "31 December\n                                                                                                                                                                                                                                 2025"
+        ],
+        [
+          "2025-12-31",
+          352,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          354,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          354,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          354,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          355,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          356,
+          "31 December\n2025"
+        ],
+        [
+          "2025-12-31",
+          356,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          369,
+          "31 December\n                                                                                                                                                                   2025"
+        ],
+        [
+          "2025-12-31",
+          371,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          371,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          371,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          372,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          373,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          390,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          390,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          390,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          390,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          390,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          391,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          392,
+          "31\u00a0December 2025"
+        ],
+        [
+          "2025-12-31",
+          397,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          400,
+          "31 December 2025"
+        ],
+        [
+          "2025-12-31",
+          407,
+          "31 December 2025"
+        ]
+      ],
+      "period_start_candidates": [
+        [
+          "2025-01-01",
+          17,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          19,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          258,
+          "1 January 2025"
+        ],
+        [
+          "2025-01-01",
+          314,
+          "1 January 2025"
+        ]
+      ]
+    },
+    "toyota_form_20f_fy2025.pdf": {
+      "statement_pdf_page": 178,
+      "statement_printed_page": "F-6",
+      "statement_text": "                                                 TOYOTA MOTOR CORPORATION\n                                         CONSOLIDATED STATEMENT OF INCOME\n\n                                                                                                        Yen in millions\n                                                                          For the year ended          For the year ended         For the year ended\n                                                                Notes       March 31, 2023              March 31, 2024             March 31, 2025\nSales revenues\n      Sales of products ..................  26          34,367,619               41,648,130               43,598,877\n      Financial services ..................  26            2,786,679                 3,447,195                 4,437,827\n      Total sales revenues ................  26          37,154,298               45,095,325               48,036,704\nCosts and expenses\n      Cost of products sold ...............                  29,128,561               33,600,612               35,510,157\n      Cost of financial services ............                    1,712,721                 2,126,395                 2,948,509\n      Selling, general and administrative ....                    3,587,990                 4,015,383                 4,782,452\n      Total costs and expenses ............                  34,429,273               39,742,390               43,241,118\nOperating income ......................                    2,725,025                 5,352,934                 4,795,586\nShare of profit (loss) of investments\n   accounted for using the equity method   . . .    11                643,063                    763,137                    591,219\nOther finance income ...................  28               379,350                    747,236                    556,700\nOther finance costs .....................  28              (125,113)                 (103,709)                 (190,711)\nForeign exchange gain (loss), net ..........                       124,516                    187,568                    705,292\nOther income (loss), net .................                        (78,109)                    17,918                    (43,497)\nIncome before income taxes ..............                    3,668,733                 6,965,085                 6,414,590\nIncome tax expense ....................  15            1,175,765                 1,893,665                 1,624,835\nNet income ...........................                    2,492,967                 5,071,421                 4,789,755\nNet income attributable to\n      Toyota Motor Corporation ...........                    2,451,318                 4,944,933                 4,765,086\n      Non-controlling interests ............                         41,650                    126,488                      24,670\n      Net income .......................                    2,492,967                 5,071,421                 4,789,755\n\n\n                                                                                                              Yen\nEarnings per share attributable to Toyota\n   Motor Corporation\n      Basic and Diluted ..................  29                 179.47                      365.94                      359.56\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                  The accompanying notes are an integral part of these consolidated financial statements\n\n                                                                          F-6",
+      "revenue_row": "Total sales revenues ................  26          37,154,298               45,095,325               48,036,704",
+      "profit_row": "Operating income ......................                    2,725,025                 5,352,934                 4,795,586",
+      "revenue_printed_token": "48,036,704",
+      "profit_printed_token": "4,795,586",
+      "year_headers": [
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "period_end_candidates": [
+        [
+          "2025-03-31",
+          178,
+          "March 31, 2025"
+        ]
+      ],
+      "period_start_candidates": [
+        [
+          "2024-04-01",
+          84,
+          "April 1, 2024"
+        ],
+        [
+          "2024-04-01",
+          163,
+          "April 1, 2024"
+        ],
+        [
+          "2024-04-01",
+          181,
+          "April 1, 2024"
+        ],
+        [
+          "2024-04-01",
+          220,
+          "April 1, 2024"
+        ]
+      ]
+    },
+    "toyota_integrated_report_2025.pdf": {
+      "classification": "summary-only",
+      "summary_pdf_pages": [
+        164,
+        165
+      ],
+      "full_statement_heading_pages": [],
+      "reason": "Integrated report cover and financial-summary headings; full-document heading search located no full consolidated statements. No numerical extraction from this source."
+    }
+  },
+  "required_fields": 36,
+  "denominator": 36,
+  "explicit_abstentions": 0,
+  "comparability_flags": {
+    "period_mismatch": true,
+    "different_profit_definitions": true,
+    "currency_differences_no_conversion": true
+  },
+  "accuracy": "unscored",
+  "utc": "2026-11-14T14:27:47.336063+00:00"
+}

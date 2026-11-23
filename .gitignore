@@ -1,0 +1,21 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+.venv/
+.venv*/
+venv/
+venv*/
+env/
+ENV/
+virtualenv/
+.virtualenvs/
+.tox/
+.nox/
+__pypackages__/
+
+# Excluded from the final submission by the student
+*.zip
+/privacy_findings.csv
+/Individual-AI-Project-Brief 1.pdf

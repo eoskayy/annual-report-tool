@@ -1,0 +1,42 @@
+KEY CHECK: 36 unique field_id and source_file/field_name keys; no merges
+READ bmw_group_report_2025.pdf: 434 pages from original PDF at runtime
+READ mercedes_benz_group_annual_report_2025.pdf: 409 pages from original PDF at runtime
+READ toyota_form_20f_fy2025.pdf: 284 pages from original PDF at runtime
+READ toyota_integrated_report_2025.pdf: 168 pages from original PDF at runtime
+FILTER 434 -> 1: bmw_group_report_2025.pdf full statement title and both exact target rows
+FILTER 60 -> 1: exact row label Revenues
+DROP 13 -> 12: remove printed note reference for Revenues
+FILTER 12 -> 1: current-year consolidated group cell for Revenues; other years/segments excluded
+FILTER 60 -> 1: exact row label Profit/loss before financial result
+FILTER 12 -> 1: current-year consolidated group cell for Profit/loss before financial result; other years/segments excluded
+FILTER 13 -> 12: last statement column-year header block for bmw_group_report_2025.pdf
+FILTER 293 -> 62: calendar-year closing-date candidates for statement year
+DROP 62 -> 1: duplicate closing dates; retain all evidence
+FILTER 293 -> 14: document dates matching end minus twelve calendar months plus one day
+DROP 14 -> 1: duplicate opening dates; retain all evidence
+FILTER 409 -> 1: mercedes_benz_group_annual_report_2025.pdf full statement title and both exact target rows
+FILTER 36 -> 1: exact row label Revenue
+DROP 3 -> 2: remove printed note reference for Revenue
+FILTER 2 -> 1: current-year consolidated group cell for Revenue; other years/segments excluded
+FILTER 36 -> 1: exact row label Earnings before interest and taxes (EBIT)
+DROP 3 -> 2: remove printed note reference for Earnings before interest and taxes (EBIT)
+FILTER 2 -> 1: current-year consolidated group cell for Earnings before interest and taxes (EBIT); other years/segments excluded
+FILTER 3 -> 2: last statement column-year header block for mercedes_benz_group_annual_report_2025.pdf
+FILTER 312 -> 141: calendar-year closing-date candidates for statement year
+DROP 141 -> 1: duplicate closing dates; retain all evidence
+FILTER 312 -> 4: document dates matching end minus twelve calendar months plus one day
+DROP 4 -> 1: duplicate opening dates; retain all evidence
+FILTER 284 -> 1: toyota_form_20f_fy2025.pdf full statement title and both exact target rows
+FILTER 53 -> 1: exact row label Total sales revenues
+DROP 4 -> 3: remove printed note reference for Total sales revenues
+FILTER 3 -> 1: current-year consolidated group cell for Total sales revenues; other years/segments excluded
+FILTER 53 -> 1: exact row label Operating income
+FILTER 3 -> 1: current-year consolidated group cell for Operating income; other years/segments excluded
+FILTER 3 -> 3: last statement column-year header block for toyota_form_20f_fy2025.pdf
+FILTER 3 -> 1: current-year statement end date
+DROP 1 -> 1: duplicate closing dates; retain all evidence
+FILTER 516 -> 4: document dates matching end minus twelve calendar months plus one day
+DROP 4 -> 1: duplicate opening dates; retain all evidence
+FILTER 168 -> 2: integrated report financial-summary headings
+FILTER 168 -> 0: integrated report full consolidated statement headings
+COMPLETE: 36 unique fields and three margin rows; no reference scoring. Outputs frozen; overwrite refused.

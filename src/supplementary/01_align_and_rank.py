@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+"""Post-results exploratory alignment; preserve every frozen primary artifact.
+
+Read base figures from frozen supervised output; extract the two supplementary
+Mercedes-Benz rows from the original PDF at runtime. No financial amounts typed.
+Run with bundled Python 3.12.14 and pypdf==6.21.4 from any directory.
+"""
+import csv
+import hashlib
+import json
+import runpy
+from decimal import Decimal, ROUND_HALF_UP, localcontext
+from pathlib import Path
+from pypdf import PdfReader
+
+ROOT=Path(__file__).resolve().parents[2]
+HELPERS=runpy.run_path(str(ROOT/'src/supervised/03_extract_and_report.py'))
+ADJUSTMENT_LABELS=['Gains/losses on equity-method investments, net','Other financial income/expense, net']
+DEFINITION_ASSUMPTION='Subtracting the two specified financial-result rows from Mercedes-Benz EBIT aligns its profit definition with BMW and Toyota; this equivalence is assumed, not established.'
+PERIOD_ASSUMPTION='Each company’s latest fiscal year is treated as comparable despite Toyota’s different reporting period.'
+
+def main():
+    target=ROOT/'results/supplementary/aligned_comparison.csv'
+    if target.exists(): raise SystemExit('Refuse to overwrite the supplementary result')
+    frozen=[p for run in ['supervised','autonomous','fresh'] for p in (ROOT/'results'/run).iterdir() if p.is_file()]
+    baseline={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in frozen}
+    with (ROOT/'results/supervised/calculated_margins.csv').open() as f: base=list(csv.DictReader(f))
+    key='mercedes'
+    filename,title=HELPERS['LOCATION']['SOURCES'][key]
+    pdf=ROOT/'data/raw'/filename
+    raw_before=(pdf.stat().st_size,pdf.stat().st_mtime_ns)
+    mapping=HELPERS['MAPPING']['map_document'](key,pdf,title)
+    if mapping['pdf_page']!=252: raise RuntimeError('Supplementary source differs from user-authorized PDF 252')
+    page=PdfReader(pdf).pages[mapping['pdf_page']-1]
+    layout=page.extract_text(extraction_mode='layout')
+    adjustments=[HELPERS['row_value'](layout,label,mapping) for label in ADJUSTMENT_LABELS]
+    rows=[]
+    with localcontext() as context:
+        context.prec=50
+        for row in base:
+            revenue=Decimal(row['revenue_value']); reported=Decimal(row['profit_measure_value'])
+            is_mercedes=row['source_file']==filename
+            first=adjustments[0][2] if is_mercedes else Decimal(0)
+            second=adjustments[1][2] if is_mercedes else Decimal(0)
+            aligned=reported-first-second
+            reported_margin=reported/revenue*100; aligned_margin=aligned/revenue*100
+            rows.append(dict(company=row['company'],source_file=row['source_file'],period_start=row['period_start'],period_end=row['period_end'],
+                currency=row['currency'],units=row['units'],revenue=str(revenue),reported_profit_label=row['profit_measure_label'],reported_profit=str(reported),
+                adjustment_1_label=adjustments[0][0] if is_mercedes else '',adjustment_1_value=str(first) if is_mercedes else '',
+                adjustment_2_label=adjustments[1][0] if is_mercedes else '',adjustment_2_value=str(second) if is_mercedes else '',
+                adjustment_source_pdf_page=mapping['pdf_page'] if is_mercedes else '',adjustment_source_printed_page=mapping['printed_page'] if is_mercedes else '',
+                aligned_profit=str(aligned),reported_margin_unrounded=str(reported_margin),reported_margin_rounded=str(reported_margin.quantize(Decimal('0.1'),rounding=ROUND_HALF_UP)),
+                aligned_margin_unrounded=str(aligned_margin),aligned_margin_rounded=str(aligned_margin.quantize(Decimal('0.1'),rounding=ROUND_HALF_UP)),
+                reported_rank=0,aligned_rank=0,analysis_status='exploratory; decided after results; not part of 36-field scores',
+                aligned_profit_definition_assumption=DEFINITION_ASSUMPTION,latest_year_comparability_assumption=PERIOD_ASSUMPTION))
+    # Highest margin is rank 1; ties share rank, based on unrounded results.
+    for prefix in ['reported','aligned']:
+        for row in rows: row[prefix+'_rank']=1+sum(Decimal(other[prefix+'_margin_unrounded'])>Decimal(row[prefix+'_margin_unrounded']) for other in rows)
+    assert len(rows)==3
+    assert (pdf.stat().st_size,pdf.stat().st_mtime_ns)==raw_before
+    assert baseline=={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in frozen}
+    with target.open('x',newline='') as f:
+        w=csv.DictWriter(f,fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
+    with (ROOT/'logs/supplementary_log.md').open('a') as f:
+        f.write('# Supplementary Exploratory Comparison\n\n2026-11-14: user authorized this adjustment and ranking after seeing all frozen results. It is exploratory and does not replace or rescore any run.\n\n')
+        f.write('Assumption: '+DEFINITION_ASSUMPTION+'\n\nAssumption: '+PERIOD_ASSUMPTION+'\n\n')
+        f.write('Base values: results/supervised/calculated_margins.csv generated by src/supervised/03_extract_and_report.py. New adjustment rows: original Mercedes-Benz PDF at runtime, dynamically located current-year consolidated statement, cross-checked against requested PDF 252 / printed 252. Labels configured from user instruction; no manually entered financial amounts. Signed amounts are subtracted, not their absolute values. BMW/Toyota profits are unchanged. No currency conversion or absolute cross-currency comparison. Ranks use unrounded ratios; rounded display is Decimal ROUND_HALF_UP to one decimal.\n\n')
+        f.write('Input rows 3; output rows 3; no filters, merges, or exclusions from company sample. All frozen run file hashes and raw source size/mtime remained unchanged.\n\n')
+        for trace in HELPERS['CELL_TRACE']:f.write('Cell-selection trace: '+json.dumps(trace)+'\n\n')
+        f.write('Output SHA-256: '+hashlib.sha256(target.read_bytes()).hexdigest()+'\n')
+    print('Supplementary comparison saved; frozen runs unchanged.')
+    for row in rows: print(row['company'],row['reported_margin_rounded'],row['aligned_margin_rounded'],row['reported_rank'],row['aligned_rank'])
+
+if __name__=='__main__': main()
